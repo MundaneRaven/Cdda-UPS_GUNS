@@ -1,6 +1,6 @@
  {
     "id": "beam_rifle",
-    "looks_like": "ar15",
+    "looks_like": "laser_rifle",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "Beam Emitter (UPS)" },
