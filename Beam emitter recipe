@@ -10,7 +10,7 @@
     "reversible": true,
     "book_learn": [ [ "advanced_electronics", 3 ], [ "textbook_electronics", 3 ] ],
     "qualities": [ { "id": "SCREW_FINE", "level": 1 } ],
-    "tools": [ [ [ "soldering_iron", 200 ], [ "toolset", 200 ] ] ],
+    "tools": [ [ [ "soldering_iron", 200 ], [ "toolset", 200 ], [] ] ],
     "components": [
       [ [ "e_scrap", 25 ] ],
       [ [ "lens", 5 ] ],
