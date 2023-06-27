@@ -45,30 +45,3 @@
     "bash": 6
   }
 }
-{
-    "id": "afs_av22",
-    "type": "GUN",
-    "name": { "str": "av-22" },
-    "copy-from": "v29",
-    "description": "A common pulse-laser pistol cleared for civilian use.  Recoilless, energy-efficient, and easy to use, the av-22 is often carried as a defense weapon by those who lack the practice required to effectively use ballistic weaponry.  Due to its low power, it must be fired in sequence mode to stand a chance against hardened foes.",
-    "price": "500 USD",
-    "price_postapoc": "500 USD",
-    "ammo": [ "battery" ],
-    "ranged_damage": { "damage_type": "heat", "amount": 5 },
-    "range": 15,
-    "modes": [ [ "DEFAULT", "pulse", 1 ], [ "BURST", "2s sequence", 2 ], [ "AUTO", "3s sequence", 3 ] ],
-    "delete": { "flags": [ "NO_UNLOAD", "NO_RELOAD" ] },
-    "ammo_to_fire": 0,
-    "energy_drain": "10 kJ",
-    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
-    "default_mods": [ "red_dot_sight" ],
-    "pocket_data": [
-      {
-        "pocket_type": "MAGAZINE_WELL",
-        "holster": true,
-        "max_contains_volume": "20 L",
-        "max_contains_weight": "20 kg",
-        "magazine_well": "75 ml",
-        "item_restriction": [ "afs_cartridge", "afs_compact_cartridge", "afs_bootleg_cartridge", "afs_archeotech_cartridge" ]
-      }
-    ]
