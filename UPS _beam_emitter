@@ -17,9 +17,9 @@
     "skill": "rifle",
     "range": 45,
     "ranged_damage": [
-      { "damage_type": "heat", "amount": 25, "armor_penetration": 15 },
-      { "damage_type": "electric", "amount": 25, "armor_penetration": 15 },
-      { "damage_type": "piercing", "amount": 10, "armor_penetration": 15 }
+      { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
+      { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
+      { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 }
     ],
     "dispersion": 5,
     "durability": 8,
