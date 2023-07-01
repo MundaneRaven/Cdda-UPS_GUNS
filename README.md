@@ -1,1 +1,1 @@
-# Cdda-UPS_GUNS
+# Cdda-UPS_WEAPONS
