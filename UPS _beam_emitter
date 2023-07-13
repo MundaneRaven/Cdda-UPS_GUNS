@@ -1,10 +1,10 @@
  {
-    "id": "beam_rifle",
+    "id": "disint(ups)",
     "looks_like": "laser_rifle",
     "type": "GUN",
     "reload_noise_volume": 10,
-    "name": { "str": "Beam Emitter (UPS)" },
-    "description": "After painstakingly disassembling machines, many magnifying glasses, lugging things around, soddering things together, and assembling a weapon chassis, you managed to make a weapon worth the time investment. This UPS powered laser rifle fires a concentrated beam capable of punching through fleshy, and some synthetic materials. Better be careful where you aim this.",
+    "name": { "str": "Disinegrator (UPS)" },
+    "description": "Designed by the militaries top scientists, using an absoloutley grotesque budget, and after being told that efficiency wasn't a problem, this weapon became known only as the "disintegrator". Not many soliders were allowed accses to this weapon, but private companies still managed to get their grubby hands on a few of these. It looks like some high tech lowlifes managed to scrape together enough brain power to mod this one with a UPS interface, its completley illegal.",
     "weight": "2950 g",
     "volume": "3 L",
     "longest_side": "940 mm",
@@ -33,12 +33,12 @@
     "melee_damage": { "bash": 6 }
   }
 {
-    "id": "beam_rifle",
+    "id": "disint",
     "looks_like": "laser_rifle",
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "Beam Emitter (UPS)" },
-    "description": "After painstakingly disassembling machines, many magnifying glasses, lugging things around, soddering things together, and assembling a weapon chassis, you managed to make a weapon worth the time investment. This UPS powered laser rifle fires a concentrated beam capable of punching through fleshy, and some synthetic materials. Better be careful where you aim this.",
+    "description": "Designed by the militaries top scientists, using an absoloutley grotesque budget, and after being told that efficiency wasn't a problem, this weapon became known only as the "disintegrator". Not many soliders were allowed accses to this weapon, but private companies still managed to get their grubby hands on a few of these.",
     "weight": "2950 g",
     "volume": "3 L",
     "longest_side": "940 mm",
@@ -68,6 +68,7 @@
         "max_contains_weight": "20 kg",
         "magazine_well": "75 ml",
         "item_restriction": [ "heavy_battery_cell", "medium_battery_cell", "light_battery_cell" ]
+      }
     "reload": 700,
     "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
@@ -124,7 +125,7 @@
   "melee_damage": {
     "bash": 50
   },
-  "copy-from": "hammer_sledge",
+  "copy-from": "steel_spear",
   "pocket_data": [
     {
       "pocket_type": "MAGAZINE",
