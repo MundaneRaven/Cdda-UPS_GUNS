@@ -32,3 +32,106 @@
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
     "melee_damage": { "bash": 6 }
   }
+{
+    "id": "beam_rifle",
+    "looks_like": "laser_rifle",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "Beam Emitter (UPS)" },
+    "description": "After painstakingly disassembling machines, many magnifying glasses, lugging things around, soddering things together, and assembling a weapon chassis, you managed to make a weapon worth the time investment. This UPS powered laser rifle fires a concentrated beam capable of punching through fleshy, and some synthetic materials. Better be careful where you aim this.",
+    "weight": "2950 g",
+    "volume": "3 L",
+    "longest_side": "940 mm",
+    "price": 160000,
+    "price_postapoc": 9200,
+    "to_hit": 3,
+    "material": [ "steel", "plastic" ],
+    "symbol": "+",
+    "color": "red",
+    "skill": "rifle",
+    "range": 45,
+    "ranged_damage": [
+      { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
+      { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
+      { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 }
+    ],
+    "dispersion": 5,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "pulse", 1 ], [ "BURST", "2s sequence", 2 ], [ "AUTO", "3s sequence", 3 ] ],
+    "loudness": 12,
+    "energy_drain": "40 kJ",
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "magazine_well": "75 ml",
+        "item_restriction": [ "heavy_battery_cell", "medium_battery_cell", "light_battery_cell" ]
+    "reload": 700,
+    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "melee_damage": { "bash": 6 }
+}
+{
+  "type": "TOOL",
+  "id": "pulverizer",
+  "name": {
+    "str": "the Disorder"
+  },
+  "description": "A large, heavy sledge hammer converted for use as a weapon.  It features a notable safety on the side, and the back of the head has a firing mechanism that can be loaded with rifle blanks.  When the head impacts and the safety is off, the blanks are engaged, sending the moving piston forward and causing massive damage.  Etched into the head are the words 'she's lost control'.",
+  "weight": "5100 g",
+  "color": "brown",
+  "symbol": "/",
+  "material": [
+    "wood",
+    "steel"
+  ],
+  "flags": [
+    "NONCONDUCTIVE",
+    "ALWAYS_TWOHAND",
+    "RELOAD_EJECT",
+    "DURABLE_MELEE"
+  ],
+  "weapon_category": [
+    "HOOKING_WEAPONRY",
+    "GREAT_HAMMERS"
+  ],
+  "techniques": [
+    "WBLOCK_1",
+    "BRUTAL",
+    "WIDE",
+    "SWEEP",
+    "SWEETSPOT"
+  ],
+  "volume": "1250 ml",
+  "longest_side": "80 cm",
+  "to_hit": {
+    "grip": "weapon",
+    "length": "long",
+    "surface": "any",
+    "balance": "uneven"
+  },
+  "price": 12000,
+  "price_postapoc": 500,
+  "qualities": [
+    [
+      "HAMMER",
+      1
+    ]
+  ],
+  "melee_damage": {
+    "bash": 50
+  },
+  "copy-from": "hammer_sledge",
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE",
+      "rigid": true,
+      "ammo_restriction": {
+        "powder_blank": 1
+      }
+    }
+  ]
+}
