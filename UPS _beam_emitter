@@ -77,11 +77,11 @@
 }
 {
   "type": "TOOL",
-  "id": "pulverizer",
+  "id": "welding_spear",
   "name": {
-    "str": "the Disorder"
+    "str": "Weldind Spear"
   },
-  "description": "A large, heavy sledge hammer converted for use as a weapon.  It features a notable safety on the side, and the back of the head has a firing mechanism that can be loaded with rifle blanks.  When the head impacts and the safety is off, the blanks are engaged, sending the moving piston forward and causing massive damage.  Etched into the head are the words 'she's lost control'.",
+  "description": "A high end welding implement with a long reach to boot. it has a small devide that slowly, yet steadily, refills the chemical fuel in the tank crom the atmosphere.",
   "weight": "5100 g",
   "color": "brown",
   "symbol": "/",
@@ -114,24 +114,21 @@
     "surface": "any",
     "balance": "uneven"
   },
-  "price": 12000,
+  "price": 120000,
   "price_postapoc": 500,
   "qualities": [
     [
-      "HAMMER",
-      1
+      "WELD",
+      2
     ]
   ],
-  "melee_damage": {
-    "bash": 50
-  },
-  "copy-from": "steel_spear",
+  "melee_damage": { "piercing": 50 },
   "pocket_data": [
     {
-      "pocket_type": "MAGAZINE",
+      "pocket_type": "MAGAZINE_WELL",
       "rigid": true,
-      "ammo_restriction": {
-        "powder_blank": 1
+      "item_restriction": {
+        "weldtank", "tinyweldtank" : 1
       }
     }
   ]
