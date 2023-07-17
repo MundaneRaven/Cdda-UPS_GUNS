@@ -1,0 +1,120 @@
+ {
+    "id": "disint(ups)",
+    "looks_like": "laser_rifle",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "Disinegrator (UPS)" },
+    "description": "Designed by the militaries top scientists, using an absoloutley grotesque budget, and after being told that efficiency wasn't a problem, this weapon became known only as the "disintegrator". Not many soliders were allowed accses to this weapon, but private companies still managed to get their grubby hands on a few of these. It looks like some high tech lowlifes managed to scrape together enough brain power to mod this one with a UPS interface, its completley illegal.",
+    "weight": "2950 g",
+    "volume": "3 L",
+    "longest_side": "940 mm",
+    "price": 160000,
+    "price_postapoc": 9200,
+    "to_hit": 3,
+    "material": [ "steel", "plastic" ],
+    "symbol": "+",
+    "color": "red",
+    "skill": "rifle",
+    "range": 45,
+    "ranged_damage": [
+      { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
+      { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
+      { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 }
+    ],
+    "dispersion": 5,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "pulse", 1 ], [ "BURST", "2s sequence", 2 ], [ "AUTO", "3s sequence", 3 ] ],
+    "loudness": 12,
+    "energy_drain": "40 kJ",
+    "reload": 0,
+    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
+    "melee_damage": { "bash": 6 }
+  }
+{
+    "id": "disint",
+    "looks_like": "laser_rifle",
+    "type": "GUN",
+    "reload_noise_volume": 10,
+    "name": { "str": "Beam Emitter (UPS)" },
+    "description": "Designed by the militaries top scientists, using an absoloutley grotesque budget, and after being told that efficiency wasn't a problem, this weapon became known only as the "disintegrator". Not many soliders were allowed accses to this weapon, but private companies still managed to get their grubby hands on a few of these.",
+    "weight": "2950 g",
+    "volume": "3 L",
+    "longest_side": "940 mm",
+    "price": 160000,
+    "price_postapoc": 9200,
+    "to_hit": 3,
+    "material": [ "steel", "plastic" ],
+    "symbol": "+",
+    "color": "red",
+    "skill": "rifle",
+    "range": 45,
+    "ranged_damage": [
+      { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
+      { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
+      { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 }
+    ],
+    "dispersion": 5,
+    "durability": 8,
+    "modes": [ [ "DEFAULT", "pulse", 1 ], [ "BURST", "2s sequence", 2 ], [ "AUTO", "3s sequence", 3 ] ],
+    "loudness": 12,
+    "energy_drain": "40 kJ",
+    "pocket_data": [
+      {
+        "pocket_type": "MAGAZINE_WELL",
+        "holster": true,
+        "max_contains_volume": "20 L",
+        "max_contains_weight": "20 kg",
+        "magazine_well": "75 ml",
+        "item_restriction": [ "heavy_battery_cell", "medium_battery_cell", "light_battery_cell" ]
+      }
+    "reload": 700,
+    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "ammo_effects": [ "LASER", "INCENDIARY" ],
+    "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ],
+    "melee_damage": { "bash": 6 }
+}
+{
+  "type": "TOOL",
+  "id": "welding_spear",
+  "name": {
+    "str": "Welding Spear"
+  },
+  "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere.",
+  "weight": "5100 g",
+  "color": "brown",
+  "symbol": "<",
+  "material": [ "wood", "steel" ],
+  "flags": [ "CONDUCTIVE", "ALWAYS_TWOHAND", "", "DURABLE_MELEE"],
+  "weapon_category": [ "HOOKING_WEAPONRY", "GREAT_HAMMERS" ],
+  "techniques": [ "WBLOCK_1" ],
+  "volume": "1250 ml",
+  "longest_side": "110 cm",
+  "to_hit": {
+    "grip": "weapon",
+    "length": "long",
+    "surface": "point",
+    "balance": "good"
+  },
+  "price": 120000,
+  "price_postapoc": 900,
+  "qualities": [
+    [
+      "WELD",
+      2
+    ]
+  ],
+  "melee_damage": { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
+      { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
+      { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 },
+  "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": {
+        "weldtank", "tinyweldtank" : 1
+      }
+    }
+  ]
+}
