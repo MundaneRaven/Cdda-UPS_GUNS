@@ -76,16 +76,16 @@
     "melee_damage": { "bash": 6 }
 }
 {
-  "type": "TOOL",
-  "id": "welding_spear",
+  "type": "weapons", "TOOL",
+  "id": "welding_spear-on",
   "name": {
-    "str": "Welding Spear"
+    "str": "Welding Spear (on)"
   },
-  "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere.",
+  "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently deactivated.",
   "weight": "5100 g",
   "color": "brown",
   "symbol": "<",
-  "material": [ "wood", "steel" ],
+  "material": [ "plastic", "steel" ],
   "flags": [ "CONDUCTIVE", "ALWAYS_TWOHAND", "", "DURABLE_MELEE"],
   "weapon_category": [ "HOOKING_WEAPONRY", "GREAT_HAMMERS" ],
   "techniques": [ "WBLOCK_1" ],
@@ -116,5 +116,48 @@
         "weldtank", "tinyweldtank" : 1
       }
     }
+{
+  "type": "GENERIC",
+  "id": "welding_spear-off",
+  "category": "weapons", "TOOL"
+  "name": {
+    "str": "Welding Spear (off)",
+    "str_pl": "Welding Spears (off)"
+  },
+  "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently deactivated.",
+  "weight": "680 g",
+  "color": "dark_brown",
+  "symbol": "/",
+  "material": [
+    "steel",
+    "plastic"
+  ],
+  "techniques": [
+    "WBLOCK_1"
+  ],
+  "flags": [
+    "DURABLE_MELEE",
+    "BELT_CLIP"
+  ],
+  "use_action": {
+    "menu_text": "Extend",
+    "type": "transform",
+    "target": "PR24-extended",
+    "msg": "You snap open your PR-24 baton."
+  },
+  "volume": "1 L",
+  "longest_side": "20 cm",
+  "to_hit": {
+    "grip": "weapon",
+    "length": "short",
+    "surface": "any",
+    "balance": "neutral"
+  },
+  "price": 30000,
+  "price_postapoc": 750,
+  "melee_damage": {
+    "bash": 5
+  }
+}
   ]
 }
