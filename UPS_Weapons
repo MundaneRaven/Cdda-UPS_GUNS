@@ -81,21 +81,34 @@
   "name": {
     "str": "Welding Spear (on)"
   },
-  "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently deactivated.",
+  "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently active.",
   "weight": "5100 g",
   "color": "brown",
   "symbol": "<",
   "material": [ "plastic", "steel" ],
-  "flags": [ "CONDUCTIVE", "ALWAYS_TWOHAND", "", "DURABLE_MELEE"],
-  "weapon_category": [ "HOOKING_WEAPONRY", "GREAT_HAMMERS" ],
-  "techniques": [ "WBLOCK_1" ],
+  "flags": [ "CONDUCTIVE",  "DURABLE_MELEE",
+    "REACH_ATTACK",
+    "POLEARM" ,
+    "SHEATH_SPEAR",
+    "ALWAYS_TWOHAND"],
+  "use_action": {
+    "menu_text": "Extend",
+    "type": "transform",
+    "target": "welding_spear-off",
+    "msg": "After pressing a few buttons, your Welding Spear (on) fizzles out and closes back up into a small cylinder."
+  }
+  "weapon_category": [ 
+    "POLEARMS", 
+    "SPEARS" ],
+  "techniques": [ "WIDE",
+    "WBLOCK_1" ],
   "volume": "1250 ml",
   "longest_side": "110 cm",
   "to_hit": {
-    "grip": "weapon",
+   "grip": "weapon",
     "length": "long",
-    "surface": "point",
-    "balance": "good"
+    "surface": "line",
+    "balance": "neutral"
   },
   "price": 120000,
   "price_postapoc": 900,
@@ -140,13 +153,13 @@
     "BELT_CLIP"
   ],
   "use_action": {
-    "menu_text": "Extend",
+    "menu_text": "Power On",
     "type": "transform",
-    "target": "PR24-extended",
-    "msg": "You snap open your PR-24 baton."
+    "target": "welding_spear-on",
+    "msg": "With a crank and a crackling noise, your Welding Spear (off) turns into an arcing plasma blade."
   },
   "volume": "1 L",
-  "longest_side": "20 cm",
+  "longest_side": "31 cm",
   "to_hit": {
     "grip": "weapon",
     "length": "short",
