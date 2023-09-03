@@ -129,7 +129,8 @@
         "weldtank", "tinyweldtank" : 1
       }
     }
-{
+  ]
+   {
   "type": "GENERIC",
   "id": "welding_spear-off",
   "category": "weapons", "TOOL"
@@ -168,9 +169,14 @@
   },
   "price": 30000,
   "price_postapoc": 750,
-  "melee_damage": {
-    "bash": 5
+  "melee_damage": { "bash": 5 
   }
-}
+     "pocket_data": [
+    {
+      "pocket_type": "MAGAZINE_WELL",
+      "rigid": true,
+      "item_restriction": {
+        "weldtank", "tinyweldtank" : 1
+      }
+    }
   ]
-}
