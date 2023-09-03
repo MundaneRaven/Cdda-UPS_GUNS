@@ -38,7 +38,7 @@
     "type": "GUN",
     "reload_noise_volume": 10,
     "name": { "str": "Disintegrator" },
-    "description": "Designed by the militaries top scientists, using an absoloutley grotesque budget, and after being told that efficiency wasn't a problem, this weapon became known only as the "disintegrator". Not many soliders were allowed accses to this weapon, but private companies still managed to get their grubby hands on a few of these.",
+    "description": "Designed by the militaries top scientists, using an absoloutley grotesque budget, and after being told that efficiency wasn't a problem, this weapon became known only as the 'disintegrator'. Not many soliders were allowed accses to this weapon, but private companies still managed to get their grubby hands on a few of these.",
     "weight": "2950 g",
     "volume": "3 L",
     "longest_side": "940 mm",
