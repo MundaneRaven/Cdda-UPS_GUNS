@@ -1,10 +1,10 @@
 [
   {
     "type": "MOD_INFO",
-    "ident": "ArmUpPAUtil",
-    "name": "Armor Up! PA Utilities",
-    "authors": "darktoes",
-    "maintainers": "DanteTorn",
+    "ident": "WepofTomrw",
+    "name": "Weapons of Tommorow",
+    "authors": "MundaneRaven",
+    "maintainers": "MundaneRaven",
     "description": "This mod aims to bring better weapons to the game. these weapons are sci-fi and space age aproximations. ",
     "category": "items",
     "dependencies": [ "dda" ]
