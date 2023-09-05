@@ -31,7 +31,7 @@
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
     "melee_damage": { "bash": 6 }
-  }
+  },
 {
     "id": "disint",
     "looks_like": "laser_rifle",
@@ -74,7 +74,7 @@
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "melee_damage": { "bash": 6 }
-}
+}, 
 {
   "type": "weapons", "TOOL",
   "id": "welding_spear-on",
@@ -130,6 +130,7 @@
       }
     }
   ]
+},
    {
   "type": "GENERIC",
   "id": "welding_spear-off",
@@ -180,3 +181,4 @@
       }
     }
   ]
+   }
