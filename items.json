@@ -1,4 +1,4 @@
- {
+[{
     "id": "disint(ups)",
     "looks_like": "laser_rifle",
     "type": "GUN",
@@ -13,7 +13,7 @@
     "to_hit": 3,
     "material": [ "steel", "plastic" ],
     "symbol": "+",
-    "color": "red",
+    "color": "LRED",
     "skill": "rifle",
     "range": 45,
     "ranged_damage": [
@@ -47,7 +47,7 @@
     "to_hit": 3,
     "material": [ "steel", "plastic" ],
     "symbol": "+",
-    "color": "red",
+    "color": "RED",
     "skill": "rifle",
     "range": 45,
     "ranged_damage": [
@@ -83,7 +83,7 @@
   },
   "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently active.",
   "weight": "5100 g",
-  "color": "brown",
+  "color": "BROWN",
   "symbol": "<",
   "material": [ "plastic", "steel" ],
   "flags": [ "CONDUCTIVE",  "DURABLE_MELEE",
@@ -131,17 +131,17 @@
     }
   ]
 },
-   {
-  "type": "GENERIC",
-  "id": "welding_spear-off",
-  "category": "weapons", "TOOL"
-  "name": {
+{
+   "type": "GENERIC",
+   "id": "welding_spear-off",
+   "category": "weapons", "TOOL"
+   "name": {
     "str": "Welding Spear (off)",
     "str_pl": "Welding Spears (off)"
   },
   "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently deactivated.",
   "weight": "680 g",
-  "color": "dark_brown",
+  "color": "WHITE",
   "symbol": "/",
   "material": [
     "steel",
@@ -181,4 +181,4 @@
       }
     }
   ]
-   }
+   }]
