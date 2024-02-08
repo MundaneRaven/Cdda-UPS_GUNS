@@ -70,8 +70,7 @@
     "melee_damage": { "bash": 6 }
   },
 
-  {
-  "id": "welding_spear-on",
+  {"id": "welding_spear-on",
    "type": "TOOL",
   "category": "weapons",
   "name": {"str": "Welding Spear (on)"},
@@ -104,22 +103,18 @@
   "qualities": 
     [["WELD", 2]],
   "melee_damage": 
-    { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
-    { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
-    { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 },
+    {"heat":15, "electric": 10, "stab": 5 },
   "pocket_data": 
-    [{"pocket_type": "MAGAZINE_WELL",
-      "rigid": true,
-      "item_restriction": 
-        {"weldtank", "tinyweldtank" : 1 }}]
+  [{"pocket_type": "MAGAZINE_WELL",
+    "rigid": true,
+    "item_restriction": 
+      {"weldtank": 1, "tinyweldtank": 4}}]
 },
 
-{"type": "TOOL", "GENERIC",
+{"id": "welding_spear-off",
+  "type": "GENERIC", "TOOL",
   "category": "weapons",
-   "id": "welding_spear-off",
-   "category": "weapons", "TOOL"
-   "name": 
-    {"str": "Welding Spear (off)",
+   "name": {"str": "Welding Spear (off)",
     "str_pl": "Welding Spears (off)"},
   "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently deactivated.",
   "weight": "680 g",
@@ -150,8 +145,8 @@
   "price_postapoc": 750,
   "melee_damage": { "bash": 5 }
      "pocket_data": 
-    {"pocket_type": "MAGAZINE_WELL",
+     [{"pocket_type": "MAGAZINE_WELL",
       "rigid": true,
       "item_restriction": 
-        {"weldtank", "tinyweldtank" : 1}}}
+        {"weldtank": 1, "tinyweldtank": 4}}]}
 ]
