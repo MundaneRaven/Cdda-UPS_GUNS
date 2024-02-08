@@ -30,6 +30,7 @@
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
     "melee_damage": { "bash": 6 }
   },
+
   {"id": "disint",
     "looks_like": "laser_rifle",
     "type": "GUN",
@@ -112,7 +113,7 @@
 },
 
 {"id": "welding_spear-off",
-  "type": "GENERIC", "TOOL",
+  "type": "TOOL",
   "category": "weapons",
    "name": {"str": "Welding Spear (off)",
     "str_pl": "Welding Spears (off)"},
@@ -143,7 +144,7 @@
     "balance": "neutral"},
   "price": 30000,
   "price_postapoc": 750,
-  "melee_damage": { "bash": 5 }
+  "melee_damage": { "bash": 5 },
      "pocket_data": 
      [{"pocket_type": "MAGAZINE_WELL",
       "rigid": true,
