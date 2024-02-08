@@ -1,5 +1,4 @@
-[
-[{"id": "disint(ups)",
+[[{"id": "disint(ups)",
     "looks_like": "laser_rifle",
     "type": "GUN",
     "reload_noise_volume": 10,
@@ -63,15 +62,17 @@
         "max_contains_volume": "20 L",
         "max_contains_weight": "20 kg",
         "magazine_well": "75 ml",
-        "item_restriction": [ "heavy_battery_cell", "medium_battery_cell", "light_battery_cell" ]}
+        "item_restriction": [ "heavy_battery_cell", "medium_battery_cell", "light_battery_cell" ]},
     "reload": 700,
     "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ],
     "melee_damage": { "bash": 6 }}], 
 
-    [{"type": "weapons", "TOOL",
-  "id": "welding_spear-on",
+    [{"type":
+    "id": "welding_spear-on",
+    "type": "TOOL",
+  "category": "weapons",
   "name": {"str": "Welding Spear (on)"},
   "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently active.",
   "weight": "5100 g",
@@ -80,7 +81,7 @@
   "material": [ "plastic", "steel" ],
   "flags": [ "CONDUCTIVE", "DURABLE_MELEE","REACH_ATTACK","POLEARM","SHEATH_SPEAR","ALWAYS_TWOHAND"],
   "use_action": 
-    {"menu_text": "Extend",
+    {"menu_text": "Turn off",
     "type": "transform",
     "target": "welding_spear-off",
     "msg": "After pressing a few buttons, your Welding Spear (on) fizzles out and closes back up into a small cylinder."}
@@ -109,13 +110,13 @@
       "item_restriction": 
         {"weldtank", "tinyweldtank" : 1 }}]],
 
-        {["type": "GENERIC",
+        {[ "type": "TOOL", "GENERIC",
+  "category": "weapons",
    "id": "welding_spear-off",
    "category": "weapons", "TOOL"
-   "name": {
-    "str": "Welding Spear (off)",
-    "str_pl": "Welding Spears (off)"
-   },
+   "name": 
+    {"str": "Welding Spear (off)",
+    "str_pl": "Welding Spears (off)"},
   "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently deactivated.",
   "weight": "680 g",
   "color": "WHITE",
@@ -148,6 +149,4 @@
     [{"pocket_type": "MAGAZINE_WELL",
       "rigid": true,
       "item_restriction": 
-        {"weldtank", "tinyweldtank" : 1}}]
-   },
-]
+        {"weldtank", "tinyweldtank" : 1}}]},]
