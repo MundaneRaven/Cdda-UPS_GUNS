@@ -1,4 +1,4 @@
-[[{"id": "disint(ups)",
+[{"id": "disint(ups)",
     "looks_like": "laser_rifle",
     "type": "GUN",
     "reload_noise_volume": 10,
@@ -28,9 +28,9 @@
     "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE", "USE_UPS" ],
-    "melee_damage": { "bash": 6 }}],
-
-    [{"id": "disint",
+    "melee_damage": { "bash": 6 }
+  },
+  {"id": "disint",
     "looks_like": "laser_rifle",
     "type": "GUN",
     "reload_noise_volume": 10,
@@ -56,35 +56,37 @@
     "modes": [[ "DEFAULT", "pulse", 1 ],[ "BURST", "2s sequence", 2 ],[ "AUTO", "3s sequence", 3 ]],
     "loudness": 12,
     "energy_drain": "40 kJ",
-    "pocket_data": [
-      {"pocket_type": "MAGAZINE_WELL",
+    "pocket_data": {
+      "pocket_type": "MAGAZINE_WELL",
         "holster": true,
         "max_contains_volume": "20 L",
         "max_contains_weight": "20 kg",
         "magazine_well": "75 ml",
-        "item_restriction": [ "heavy_battery_cell", "medium_battery_cell", "light_battery_cell" ]},
+        "item_restriction": [ ["heavy_battery_cell"], ["medium_battery_cell"], ["light_battery_cell" ]]},
     "reload": 700,
-    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "stock", 1 ], [ "underbarrel", 1 ] ],
+    "valid_mod_locations": [ [ "emitter", 1 ], [ "grip", 1 ], [ "lens", 1 ], [ "rail", 1 ], [ "sights", 1 ], [ "sling", 1 ], [ "stock", 1 ], [ "stock accessory", 1 ], [ "underbarrel", 1 ] ],
     "ammo_effects": [ "LASER", "INCENDIARY" ],
     "flags": [ "NEVER_JAMS", "NO_UNLOAD", "NON_FOULING", "NEEDS_NO_LUBE" ],
-    "melee_damage": { "bash": 6 }}], 
+    "melee_damage": { "bash": 6 }
+  },
 
-    [{"type":
-    "id": "welding_spear-on",
-    "type": "TOOL",
+  {
+  "id": "welding_spear-on",
+   "type": "TOOL",
   "category": "weapons",
   "name": {"str": "Welding Spear (on)"},
   "description": "A high end welding implement with a long reach to boot. it has a small device that slowly, yet steadily, refills the chemical fuel in the tank from the sorounding atmosphere. It's currently active.",
   "weight": "5100 g",
-  "color": "BROWN",
-  "symbol": "<",
+  "color": "PURPLE",
+  "symbol": "/",
   "material": [ "plastic", "steel" ],
   "flags": [ "CONDUCTIVE", "DURABLE_MELEE","REACH_ATTACK","POLEARM","SHEATH_SPEAR","ALWAYS_TWOHAND"],
   "use_action": 
     {"menu_text": "Turn off",
     "type": "transform",
     "target": "welding_spear-off",
-    "msg": "After pressing a few buttons, your Welding Spear (on) fizzles out and closes back up into a small cylinder."}
+    "msg": "After pressing a few buttons, your Welding Spear (on) fizzles out and closes back up into a small cylinder."
+  },
   "weapon_category": 
     ["POLEARMS", 
     "SPEARS"],
@@ -101,16 +103,18 @@
   "price_postapoc": 900,
   "qualities": 
     [["WELD", 2]],
-  "melee_damage": { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
-        { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
-      { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 },
+  "melee_damage": 
+    { "damage_type": "heat", "amount": 15, "armor_penetration": 4 },
+    { "damage_type": "electric", "amount": 10, "armor_penetration": 10 },
+    { "damage_type": "piercing", "amount": 5, "armor_penetration": 5 },
   "pocket_data": 
     [{"pocket_type": "MAGAZINE_WELL",
       "rigid": true,
       "item_restriction": 
-        {"weldtank", "tinyweldtank" : 1 }}]],
+        {"weldtank", "tinyweldtank" : 1 }}]
+},
 
-        {[ "type": "TOOL", "GENERIC",
+{"type": "TOOL", "GENERIC",
   "category": "weapons",
    "id": "welding_spear-off",
    "category": "weapons", "TOOL"
@@ -146,7 +150,8 @@
   "price_postapoc": 750,
   "melee_damage": { "bash": 5 }
      "pocket_data": 
-    [{"pocket_type": "MAGAZINE_WELL",
+    {"pocket_type": "MAGAZINE_WELL",
       "rigid": true,
       "item_restriction": 
-        {"weldtank", "tinyweldtank" : 1}}]},]
+        {"weldtank", "tinyweldtank" : 1}}}
+]
